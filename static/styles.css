@@ -1,0 +1,390 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Kumb Sans", sans-serif;
+  scroll-behavior: smooth;
+}
+
+#nav__wrapper {
+  background-color: #131313;
+  position: fixed;
+  width: fit-content;
+  padding: 5px;
+  height: 100%;
+  text-align: center;
+  box-shadow: .1px -.1px 20px rgb(77, 77, 80);
+  overflow-y: scroll;
+}
+
+.nav__heading {
+  color: #fff;
+  font-size: 1.5vw;
+}
+
+.nav__items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  padding-top: 30px;
+}
+
+.nav__items a {
+  color: #fff;
+  font-size: 2vw;
+  margin-bottom: 15px;
+  text-align: center;
+  text-decoration: none;
+  padding: 5px;
+  display: block;
+  width: 100%;
+  height: 90%;
+}
+
+.nav__items a:hover {
+  font-style: bold;
+  color: #fffaaaff;
+  background-color: rgb(43, 39, 39);
+  border-radius: 360px;
+}
+
+.nav__buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__buttons button {
+  width: 10vh;
+  height: 10vh;
+  margin: 15px 5px;
+  background-color: #131313;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+
+}
+
+.nav__buttons button img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  filter: invert(100%);
+}
+
+.nav__buttons button:hover{
+  background-color: #222222;
+  transition: all 0.3s ease;
+}
+
+.nav__buttons button:active{
+  background-color: #0c0c0c;
+  transition: all 0.3s ease;
+}
+
+.login__wrapper {
+  align-items: right;
+  justify-content: right;
+  width: 100%;
+  height: 10%;
+  background-color: #222121;
+  padding-top: .5vh;
+}
+
+#login__button {
+  all: unset;
+  text-align: center;
+  background-color: #302e2e;
+  display: block;
+  margin-left: 88%;
+  color: #fff;
+  width: fit-content;
+  font-size: 3vh;
+  margin-top: .5vh;
+  padding: .5vh 1vw;
+  border-radius: 10px;
+  transition: all .3s ease;
+}
+
+#login__button:hover {
+  background-color: #413f3f;
+  transition: all .3s ease;
+}
+
+#login__button:active {
+  background-color: #0c0c0c;
+  transition: all .3s ease;
+}
+
+#loginMenu {
+  display: none;
+  position: absolute;
+  justify-content: center;
+  text-align: center;
+  bottom: 0;
+  z-index: 9;
+  right: 10px;
+  top: 7%;;
+  width: fit-content;
+  height: fit-content;
+  background-color: #141414;
+  border: 12px solid rgb(39, 38, 38);
+  border-radius: 25px;
+  color: rgb(226, 220, 220);
+  opacity: 1;
+  transition: all .5s ease;
+}
+
+.login-field {
+  width: 25vw;
+  background-color: #444444;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.login-field input,
+.login-field label{
+  font-size: 1vw;
+  width: 65%;
+  border-radius: 20px;
+  padding: 0 1vw;
+  color: rgb(226, 220, 220);
+}
+
+.login-field input {
+  background-color: #727171;
+}
+
+#addMenu {
+  display: none;
+  position: fixed;
+  justify-content: center;
+  text-align: center;
+  bottom: 0;
+  z-index: 9;
+  left: 12.5%;
+  top: 25%;
+  width: 75%;
+  height: 50%;
+  background-color: #141414;
+  border: 12px solid rgb(39, 38, 38);
+  border-radius: 50px;
+  color: rgb(226, 220, 220);
+  opacity: 1;
+  transition: all .5s ease;
+}
+
+#delMenu {
+  display: none;
+  position: fixed;
+  justify-content: center;
+  text-align: center;
+  bottom: 0;
+  z-index: 9;
+  left: 12.5%;
+  top: 25%;
+  width: 75%;
+  height: 50%;
+  background-color: #141414;
+  border: 12px solid rgb(39, 38, 38);
+  border-radius: 50px;
+  color: rgb(226, 220, 220);
+  opacity: 1;
+  transition: all .5s ease;
+}
+
+.inputName {
+  margin-top: 10vh;
+  width: 75%;
+  background-color: #444444;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+  padding: 2vh 0;
+}
+
+.inputName input,
+.inputName label{
+  font-size: 4vw;
+  width: 65%;
+  border-radius: 20px;
+  padding: 0 1vw;
+  color: rgb(226, 220, 220);
+}
+
+.inputName input {
+  background-color: #727171;
+}
+
+.closeAddMenu {
+  width: 25%;
+  height: fit-content;
+  font-size: 4vw;
+  background-color: #131313;
+  transition: all 0.3s ease;
+  color: #fff;
+  margin: 5vw;
+  border-radius: 20px;
+}
+
+.closeAddMenu:hover {
+  transition: all 0.3s ease;
+  background-color: #222222;
+}
+
+.closeAddMenu:active {
+  background-color: #0c0c0c;
+  transition: all 0.3s ease;
+}
+
+
+.openAddMenuEffect {
+  opacity: .5;
+  transition: all .5s ease;
+}
+
+.closeAddMenuEffect {
+  opacity: 1;
+  transition: all .5s ease;
+}
+
+
+/*Here*/
+.closeDelMenu {
+  width: 25%;
+  height: fit-content;
+  font-size: 4vw;
+  background-color: #131313;
+  transition: all 0.3s ease;
+  color: #fff;
+  margin: 5vw;
+  border-radius: 20px;
+}
+
+.closeDelMenu:hover {
+  transition: all 0.3s ease;
+  background-color: #222222;
+}
+
+.closeDelMenu:active {
+  background-color: #0c0c0c;
+  transition: all 0.3s ease;
+}
+@media screen and (max-width: 673px) {
+  #nav__wrapper {
+    width: 92px;
+    padding: 5px;
+  }
+  
+  .nav__heading {
+    font-size: .65rem;
+  }
+  
+  .nav__items a{
+    font-size: .9rem;
+  }
+}
+
+#main__page {
+  margin-left: 136px;
+}
+
+#about__wrapper {
+  background-color: #222121;
+  height: 50%;
+  color: #fff;
+  text-align: center;
+}
+
+.about__break {
+  padding-top: 2.5%;
+}
+
+.about__bio {
+  background-color: rgb(27, 54, 54);
+  height: fit-content;
+  width: 90%;
+  margin: auto;
+  padding: 5%;
+  color: rgb(196, 196, 196);
+  margin-bottom: 2%;
+  border-radius: 2rem;
+  box-shadow: .1px -.1px 7px lightblue;
+}
+
+.about__bio h2{
+  font-size: 2.5rem;
+  padding-bottom: 75px;
+}
+
+.about__bio p {
+  text-align: left;
+  padding: 10px;
+  font-size: 2vh;
+}
+
+.about__qualifications {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.about__cert {
+  font-size: 2rem;
+  color: rgb(196, 196, 196);
+}
+
+.about__img {
+  width: 25%;
+  flex: 33%;
+  padding: 3%;
+}
+
+.credits {
+  padding: 5% 10%;
+  background-color: #222121;
+  display: flex;
+  text-align: center;
+}
+
+.credits a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.credits a:hover {
+  color: rgb(131, 127, 127)
+}
+
+.openWindow {
+  display: block !important;
+}
+
+/* Custom Scrollbar*/
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track{
+  background-color: #1a1818;
+  border-radius: -20px;
+}
+ 
+
+/* Handle */
+::-webkit-scrollbar-thumb{
+  background: #383737;
+  border-radius: 20px;
+
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
